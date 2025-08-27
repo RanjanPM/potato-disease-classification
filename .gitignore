@@ -105,6 +105,9 @@ training/PlantVillage/**/*.JPG
 training/PlantVillage/**/*.png
 training/PlantVillage/**/*.PNG
 
+# Note: PlantVillage dataset should be downloaded separately from Kaggle
+# See DATASET_SETUP.md for download instructions
+
 # Trained models - use Git LFS
 saved_models/*.h5
 saved_models/*.hdf5

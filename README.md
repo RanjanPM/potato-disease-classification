@@ -45,7 +45,10 @@ potato-disease/
 │   └── potato-disease-frontend/     # React TypeScript app
 ├── 📁 training/                     # ML model training
 │   ├── potato-disease-classification-model.ipynb  # Comprehensive training notebook
-│   └── PlantVillage/               # Training dataset (2000+ images)
+│   └── PlantVillage/               # Training dataset (download required)
+│       ├── Potato___Early_blight/  # ~1,000 images of early blight disease
+│       ├── Potato___healthy/       # ~152 images of healthy potato leaves  
+│       └── Potato___Late_blight/   # ~1,000 images of late blight disease
 ├── 📁 saved_models/                 # Trained ML models
 │   └── 1_potatos.h5                # TensorFlow model (2.18 MB)
 ├── 📁 docs/                         # Documentation and images
@@ -55,6 +58,9 @@ potato-disease/
 ├── .gitattributes                  # Git LFS configuration
 ├── LICENSE                         # MIT License
 ├── CONTRIBUTING.md                 # Contribution guidelines
+├── DATASET_SETUP.md                # Dataset download instructions
+├── setup_dataset.ps1               # Windows dataset cleanup script
+├── setup_dataset.sh                # Unix dataset cleanup script
 ├── start-api.bat/.ps1              # Windows scripts to start API
 ├── start-ui.bat/.ps1               # Windows scripts to start UI
 └── README.md                       # This file
@@ -68,7 +74,27 @@ potato-disease/
 - 🔧 **Git** and **Git LFS** (for large files)
 - 💾 **4GB+ RAM** (for model inference)
 
-### 🛠️ Installation
+### � Dataset Setup (Required for Training)
+
+**Important**: If you want to train the model yourself, you need to download the PlantVillage dataset:
+
+1. **Download dataset**: Go to [Kaggle PlantVillage Dataset](https://www.kaggle.com/datasets/arjuntejaswi/plant-village)
+2. **Extract** and place the `PlantVillage` folder in `training/`
+3. **Run cleanup script**:
+   ```bash
+   # Windows
+   .\setup_dataset.ps1
+   
+   # Linux/macOS  
+   chmod +x setup_dataset.sh
+   ./setup_dataset.sh
+   ```
+
+📚 **Full dataset instructions**: See [DATASET_SETUP.md](DATASET_SETUP.md)
+
+> **Note**: Pre-trained model is included, so dataset download is optional unless you want to retrain.
+
+### �🛠️ Installation
 
 #### Option 1: Quick Setup (Windows)
 
