@@ -1,0 +1,50 @@
+MIT License
+
+Copyright (c) 2025 Potato Disease Classification System
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+This project uses several open-source libraries and datasets:
+
+### PlantVillage Dataset
+- **Source**: PlantVillage Project
+- **License**: Creative Commons
+- **Citation**: Hughes, D. P., & Salathé, M. (2015). An open access repository of images on plant health to enable the development of mobile disease diagnostics. arXiv preprint arXiv:1511.08060.
+
+### TensorFlow
+- **License**: Apache License 2.0
+- **Copyright**: The TensorFlow Authors
+
+### React
+- **License**: MIT License
+- **Copyright**: Facebook, Inc. and its affiliates
+
+### FastAPI
+- **License**: MIT License
+- **Copyright**: Sebastián Ramírez
+
+## Educational Use Disclaimer
+
+This software is primarily designed for educational and research purposes. While the machine learning model provides predictions about potato plant diseases, these predictions should not be used as the sole basis for agricultural decisions without consultation with qualified plant pathologists or agricultural experts.
+
+The authors and contributors of this project disclaim any responsibility for crop damage, financial losses, or other consequences resulting from the use of this software in production agricultural environments.

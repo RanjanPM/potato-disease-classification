@@ -1,0 +1,12 @@
+# Track large files with Git LFS
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.hdf5 filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.model filter=lfs diff=lfs merge=lfs -text
+
+# Track image datasets with Git LFS
+training/PlantVillage/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+training/PlantVillage/**/*.JPG filter=lfs diff=lfs merge=lfs -text
+training/PlantVillage/**/*.png filter=lfs diff=lfs merge=lfs -text
+training/PlantVillage/**/*.PNG filter=lfs diff=lfs merge=lfs -text
