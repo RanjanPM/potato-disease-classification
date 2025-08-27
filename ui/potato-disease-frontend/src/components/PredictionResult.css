@@ -1,0 +1,159 @@
+.prediction-result {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.result-icon {
+  font-size: 3rem;
+  min-width: 60px;
+}
+
+.result-info {
+  flex: 1;
+  text-align: left;
+}
+
+.result-class {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.confidence-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  height: 25px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.confidence-bar {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.8s ease-out;
+  position: relative;
+}
+
+.confidence-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 0.9rem;
+  z-index: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.result-description {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.result-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.recommendations {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.recommendations h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.recommendations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendations li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #4CAF50;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.recommendations li::before {
+  content: "✓";
+  position: absolute;
+  left: 1rem;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.result-disclaimer {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-disclaimer p {
+  opacity: 0.8;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .prediction-result {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .result-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .result-info {
+    text-align: center;
+  }
+  
+  .result-class {
+    font-size: 1.5rem;
+  }
+  
+  .result-description,
+  .recommendations {
+    text-align: center;
+  }
+}
