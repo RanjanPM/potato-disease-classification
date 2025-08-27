@@ -74,8 +74,8 @@ potato-disease/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/potato-disease.git
-   cd potato-disease
+   git clone https://github.com/RanjanPM/potato-disease-classification.git
+   cd potato-disease-classification
    ```
 
 2. **Install Git LFS and pull large files:**
@@ -103,8 +103,8 @@ potato-disease/
 **Backend Setup:**
 ```bash
 # Clone and navigate
-git clone https://github.com/YOUR_USERNAME/potato-disease.git
-cd potato-disease
+git clone https://github.com/RanjanPM/potato-disease-classification.git
+cd potato-disease-classification
 
 # Setup Python environment
 python -m venv .venv
